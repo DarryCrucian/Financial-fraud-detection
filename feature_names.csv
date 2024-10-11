@@ -1,0 +1,17 @@
+step
+amount
+oldbalanceOrg
+newbalanceOrig
+oldbalanceDest
+newbalanceDest
+orig_diff
+dest_diff
+surge
+freq_dest
+type__CASH_IN
+type__CASH_OUT
+type__DEBIT
+type__PAYMENT
+type__TRANSFER
+customers_org
+customers_dest
