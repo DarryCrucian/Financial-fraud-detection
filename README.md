@@ -1,14 +1,35 @@
-# Financial-fraud-detection
-This project is about building a machine learning model to detect fraudulent transactions. The dataset used for this project is the PaySim1 dataset, which contains information about over 2 million transactions. The goal of the project is to build a model that can accurately identify fraudulent transactions with a low false positive rate.
+# Financial Fraud Detection Project
 
-The first step in the project is to explore the data and identify any potential features that could be used to identify fraudulent transactions. Some of the features that were identified include the amount of the transaction, the time of the transaction, the type of transaction, and the customer's account information.
+This project is aimed at developing a machine learning model to identify fraudulent financial transactions accurately and efficiently. The dataset utilized is derived from the PaySim1 dataset, which contains information about various types of transactions. The primary objective is to build a reliable model that can detect fraudulent activities while minimizing false positive rates.
 
-Once the features have been identified, the next step is to split the data into a training set and a test set. The training set will be used to train the machine learning model, and the test set will be used to evaluate the model's performance.
+## Project Overview
 
-There are a number of different machine learning algorithms that can be used to detect fraudulent transactions. Some of the most common algorithms include logistic regression, decision trees, and support vector machines. In this project, a random forest classifier will be used to build the machine learning model.
+### 1. Data Exploration and Feature Engineering
+   - The project began with an in-depth analysis of the dataset to identify key features that could contribute to fraud detection. Critical attributes such as transaction amount, transaction type, and account balance changes were examined.
+   - To enhance the dataset, additional features were engineered. These include balance ratios, transaction differences, and ratios comparing transaction amounts to account balances, all designed to improve the model's sensitivity to fraudulent behavior.
 
-The random forest classifier is an ensemble learning algorithm that combines multiple decision trees to make predictions. The random forest classifier is a powerful algorithm that can achieve high accuracy in detecting fraudulent transactions.
+### 2. Model Development and Optimization
+   - The dataset was divided into training and testing sets to ensure that the model’s performance could be rigorously evaluated.
+   - Various machine learning models were explored, with a particular focus on the Naive Bayes classifier. Hyperparameter tuning was performed using `GridSearchCV` to optimize the model’s configuration, ensuring robust performance.
+   - The final model was selected based on its accuracy, precision, recall, and ROC AUC score. The model was further fine-tuned to achieve the best balance between identifying fraudulent transactions and minimizing false positives.
 
-Once the machine learning model has been trained, it can be used to predict whether new transactions are fraudulent or not. The model's predictions can then be used to flag potential fraudulent transactions for further investigation.
+### 3. Implementation in Jupyter Notebook
+   - The Jupyter Notebook was structured to present a clear and concise workflow:
+     - **Configuration Settings**: Defined for model training and evaluation, ensuring reproducibility.
+     - **Modular Code Design**: Functions were developed for data preprocessing, model training, and evaluation to maintain clarity and scalability.
+     - **Evaluation Metrics**: Key metrics such as ROC AUC score, confusion matrices, and classification reports were logged to monitor performance.
+     - **Visualizations**: Graphical representations, including plots and confusion matrices, were integrated to provide visual insights into model performance.
 
-The goal of this project is to build a machine learning model that can accurately identify fraudulent transactions with a low false positive rate. The model that is built in this project can be used by financial institutions to protect their customers from fraud.
+### 4. Deployment via Streamlit Application
+   - A professional, interactive Streamlit application was developed to allow real-time fraud detection based on user-uploaded data.
+   - **Application Features**:
+     - Users can upload transaction datasets in CSV format, and the app processes and visualizes the data.
+     - The application displays key insights such as transaction type distributions and transaction values over time, offering an interactive user experience.
+     - The trained model predicts fraudulent transactions in the uploaded dataset, presenting flagged entries in a well-organized table format.
+     - Advanced visualizations using Plotly provide detailed analysis of flagged transactions, enhancing the interpretability of results.
+   - The application was styled with custom CSS and designed with a clean and intuitive interface, demonstrating a professional approach to deploying machine learning models.
+
+## Conclusion
+
+This project successfully demonstrates the process of building and deploying a machine learning solution for financial fraud detection. The model and application are designed to provide financial institutions with a reliable tool for monitoring transactions, ensuring the security and integrity of financial systems. This work reflects a comprehensive understanding of data analysis, model development, optimization, and deployment, showcasing technical skills and the ability to create impactful solutions.
+
