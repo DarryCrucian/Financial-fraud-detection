@@ -31,5 +31,4 @@ This project is aimed at developing a machine learning model to identify fraudul
 
 ## Conclusion
 
-This project successfully demonstrates the process of building and deploying a machine learning solution for financial fraud detection. The model and application are designed to provide financial institutions with a reliable tool for monitoring transactions, ensuring the security and integrity of financial systems. This work reflects a comprehensive understanding of data analysis, model development, optimization, and deployment, showcasing technical skills and the ability to create impactful solutions.
-
+We successfully build and deploying a machine learning solution for financial fraud detection. The model and application are designed to provide financial institutions with a reliable tool for monitoring transactions, ensuring the security and integrity of financial systems.
